@@ -8,7 +8,11 @@ def fileRead(name):
 
 #adds two xy coordinates together
 def posAdd(pos1, pos2):
-    return tuple([ sum(coords) for coords in zip(pos1, pos2) ])
+    return tuple([ a+b for a,b in zip(pos1, pos2) ])
+
+#subtracts two xy coordinates
+def posSub(pos1, pos2):
+    return tuple([ a-b for a,b in zip(pos1, pos2) ])
 
 #multiplies two xy coordinates together
 def posMult(pos1, pos2):
